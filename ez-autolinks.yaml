@@ -1,0 +1,5 @@
+enabled: true
+links:
+  Grav:
+    words: 'Grav, grav'
+    url: 'https://getgrav.org/'

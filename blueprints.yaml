@@ -1,0 +1,50 @@
+name: EZ Autolinks
+slug: ez-autolinks
+type: plugin
+version: 0.1.0
+description: Inserts links for particular words on every page
+icon: plug
+author:
+  name: Evgenii Zinner
+  email: evgenii.zinner@gmail.com
+homepage: https://github.com/grav-plugin-ezautolinks/grav-plugin-ez-autolinks
+demo: 
+keywords: grav, plugin, etc
+bugs: https://github.com/grav-plugin-ezautolinks/grav-plugin-ez-autolinks/issues
+docs: https://github.com/grav-plugin-ezautolinks/grav-plugin-ez-autolinks/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    links:
+      type: list
+      label: 'Auto Links'
+      help: 'Add a link entry with a comma separated list of words'
+      style: vertical
+      fields:
+        .words:
+          type: text
+          label: 'Words'
+          help: 'Enter multiple words separated by commas. E.g.: Word, WORD, words, Words'
+          validate:
+            required: true
+        .url:
+          type: text
+          label: 'URL'
+          validate:
+            required: true
+

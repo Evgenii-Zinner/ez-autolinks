@@ -1,0 +1,10 @@
+en:
+  PLUGIN_AUTOLINKS:
+    PLUGIN_NAME: 'EZ Auto Links'
+    PLUGIN_DESCRIPTION: 'Automatically convert words to links in your page content'
+    LINKS: 'Links'
+    LINKS_HELP: 'Add a link entry with a comma separated list of words'
+    WORDS: 'Words'
+    WORDS_HELP: 'Enter multiple words separated by commas. E.g.: Акции, акции, Акциями'
+    URL: 'URL'
+    URL_HELP: 'Enter the URL for the link'
