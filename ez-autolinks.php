@@ -23,7 +23,7 @@ class EZAutolinksPlugin extends Plugin
         $html = $page->getRawContent();
 
         // Get the list from configuration and convert it to an associative array.
-        $linksList = $this->config->get('plugins.autolinks.links', []);
+        $linksList = $this->config->get('plugins.ez-autolinks.links', []);
         $links = [];
         if (is_array($linksList)) {
             foreach ($linksList as $item) {
