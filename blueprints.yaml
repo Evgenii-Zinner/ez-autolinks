@@ -7,11 +7,11 @@ icon: plug
 author:
   name: Evgenii Zinner
   email: evgenii.zinner@gmail.com
-homepage: https://github.com/grav-plugin-ezautolinks/grav-plugin-ez-autolinks
+homepage: https://github.com/Evgenii-Zinner/ez-autolinks
 demo: 
 keywords: grav, plugin, etc
-bugs: https://github.com/grav-plugin-ezautolinks/grav-plugin-ez-autolinks/issues
-docs: https://github.com/grav-plugin-ezautolinks/grav-plugin-ez-autolinks/blob/develop/README.md
+bugs: https://github.com/Evgenii-Zinner/ez-autolinks/issues
+docs: https://github.com/Evgenii-Zinner/ez-autolinks/blob/master/README.md
 license: MIT
 
 dependencies:
