@@ -30,6 +30,15 @@ form:
         0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
+    debug:
+      type: toggle
+      label: 'Enable detailed logging'
+      help: 'Log which words were replaced and how many times'
+      highlight: 0
+      default: 0
+      options:
+        1: 'Enabled'
+        0: 'Disabled'
     links:
       type: list
       label: 'Auto Links'
@@ -39,7 +48,7 @@ form:
         .words:
           type: text
           label: 'Words'
-          help: 'Enter multiple words separated by commas. E.g.: Word, WORD, words, Words'
+          help: 'Enter multiple words separated by commas. E.g.: Акции, акции, Акциями'
           validate:
             required: true
         .url:
@@ -47,4 +56,3 @@ form:
           label: 'URL'
           validate:
             required: true
-
